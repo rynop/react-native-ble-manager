@@ -286,7 +286,8 @@ __Arguments__
 - `characteristicUUID` - `String` - the UUID of the characteristic.
 
 ### read(peripheralId, serviceUUID, characteristicUUID)
-Read the current value of the specified characteristic, you need to call `retrieveServices` method before.
+Read the current value of the specified characteristic, you need to call `retrieveServices` method before.  You only need to call `retrieveServices` once after a connection is made.
+
 Returns a `Promise` object.
 
 __Arguments__
